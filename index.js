@@ -5,7 +5,9 @@ var cors = require('cors');
 
 var app = express();
 var router = express.Router();
-
+router.get('/', function (req, res, next) {
+	res.status(200).send("Hi, It works!")
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
