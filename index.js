@@ -26,6 +26,6 @@ router.post('/processpay', function (request, response) {
 })
 
 app.use(router);
-app.listen(3333, function () {
+app.listen(process.env.PORT || 5000, function () {
     console.log('Server started');
 })
